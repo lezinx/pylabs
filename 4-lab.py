@@ -7,3 +7,4 @@ elif p <= 3:
 	print('Лентяй')
 else:
 	print('Нет такой оценки!')
+	ss
