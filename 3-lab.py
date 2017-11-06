@@ -5,3 +5,6 @@ K2 = abs(int(input('K2 =')))
 K3 = abs(int(input('K3 =')))
 Y = (x + 3*a - K1*x) / (K2*x + K3*x)
 print('Y =',round(Y,3))
+фывыфв
+фывыфвф
+фывыфв
