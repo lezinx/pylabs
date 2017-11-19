@@ -1,21 +1,23 @@
 import math
 
 def NonRec(x, n):
+	"""Iterative solution"""
 	s = 1
 	for i in range(1,n + 1):
 		s += (i+1) * x ** i/math.factorial(i)
 	return s
 
 def Rec(x, n):
+	"""Recursive solution"""
 	if n == 0:
 		return 1
 	else:
 		return x**n*(n+1)/math.factorial(n) + Rec(x, n - 1)
 
 x = float(input('x = '))
-epsilon = float(input('epsilon = '))
 while (x < -2.4 or x > 2.4):
 	x = float(input('x = '))
+epsilon = float(input('epsilon = '))
 term = 1
 n = 0
 while(term > epsilon):
