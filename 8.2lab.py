@@ -1,5 +1,6 @@
 from random import randint
 
+
 def output(m): 
 	"""Вывод матрицы"""
 	for i in range(length):
@@ -10,14 +11,18 @@ def output(m):
 
 a = int(input('a: '))
 b = int(input('b: '))
+k = 0
+z = 0
 length = int(input('kvadr: '))
 
 matrix = [[randint(a,b)for j in range(length)]for i in range(length)]
+print(matrix)
 output(matrix)
 
-for k in range(length):
-	temp = matrix[k][0]
-	matrix[k][0] = matrix[length - 1][length - k - 1]
-	matrix[length - 1][length - k - 1] = temp
+new = matrix[-1][1:]
+new2 = []
+
+print(new)
+print(new2)
 output(matrix)
 
