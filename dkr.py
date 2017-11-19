@@ -14,7 +14,8 @@ def Rec(x, n):
 
 x = float(input('x = '))
 epsilon = float(input('epsilon = '))
-
+while (x < -2.4 or x > 2.4):
+	x = float(input('x = '))
 term = 1
 n = 0
 while(term > epsilon):
