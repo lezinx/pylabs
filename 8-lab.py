@@ -1,12 +1,12 @@
 from random import randint
 
-def output(m): 
+def output(m):
 	"""Вывод матрицы"""
 	for i in range(length):
 		for j in range(length):
 			print(m[i][j], end = '\t')
 		print()
-	print()	
+	print()
 
 a = int(input('a: '))
 b = int(input('b: '))
